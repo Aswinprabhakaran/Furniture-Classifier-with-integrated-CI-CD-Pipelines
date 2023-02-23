@@ -81,3 +81,37 @@ c) The uploaded images is handled by flask forms and inference is done on the im
 
 ![Result Page](https://github.com/Aswinprabhakaran/project_fulhaus/blob/main/display_images/view_3.png)
 
+
+## Libraries and Frameworks Used :
+
+* Flask
+* Numpy
+* Opencv
+* imgaug
+* keras
+* Tensorflow
+* tqdm
+* PILLOW
+
+
+## CONTAINERIZATION using DOCKER
+
+Docker Image is buit using the docker file with Python Image supported by Docker as follows
+
+```
+# syntax=docker/dockerfile:1
+
+FROM python:3.8-slim-buster
+
+WORKDIR /app
+
+COPY requirements.txt requirements.txt
+RUN pip3 install -r requirements.txt
+
+COPY . .
+
+CMD [ "python3", "-m" , "src.use_model.app"]
+```
+
+This config seleccted the Python image and then copies the python virtual environment which we have set-up and the copies all the necessary files to run the flask application.
+Once the files are copied, the python execution command is triggered.
