@@ -2,6 +2,17 @@
 
 The AIM of this repo is to showcase the Deep learning model building capability with Automatic Docker Image Builds on Every commit to Main branch.
 
+## Libraries and Frameworks Used :
+
+* Flask
+* Numpy
+* Opencv
+* imgaug
+* keras
+* Tensorflow
+* tqdm
+* PILLOW
+
 ## 1) Model Training :
 
  **a) Training Data generation**
@@ -72,26 +83,13 @@ def inference(abs_image_path):
 
 b) For demo purpose, I have Also slightly toughed up on a Front-End in Flask which enables us to upload an image for the prediction/inference purposes.
 
-<img src="https://github.com/Aswinprabhakaran/project_fulhaus/blob/main/display_images/view_1.png" width="550" height="400">
+![View 1](https://github.com/Aswinprabhakaran/project_fulhaus/blob/main/display_images/view_1.png)
 
-<img src="https://github.com/Aswinprabhakaran/project_fulhaus/blob/main/display_images/view_2.png" width="550" height="400">
-
+![View 2](https://github.com/Aswinprabhakaran/project_fulhaus/blob/main/display_images/view_2.png)
 
 c) The uploaded images is handled by flask forms and inference is done on the image and the results are routed back to the front end with Confidence percentage as well.
 
-<img src="https://github.com/Aswinprabhakaran/project_fulhaus/blob/main/display_images/view_3.png" width="550" height="400">
-
-
-## Libraries and Frameworks Used :
-
-* Flask
-* Numpy
-* Opencv
-* imgaug
-* keras
-* Tensorflow
-* tqdm
-* PILLOW
+![View 3](https://github.com/Aswinprabhakaran/project_fulhaus/blob/main/display_images/view_3.png)
 
 
 ## CONTAINERIZATION using DOCKER
@@ -117,3 +115,11 @@ This config seleccted the Python image and then copies the python virtual enviro
 Once the files are copied, the python execution command is triggered.
 
 ![Docker Image](https://github.com/Aswinprabhakaran/project_fulhaus/blob/main/display_images/docker_image_built.png)
+
+
+### GitHub Actions Setup 
+
+I have created an accound on Docker HUB registry and generated a HUG Token which is configured ini the **Secrets** regions of Workflow which enables the automatic build and push of ducker image to docker hub for every commit to main branch.
+Attached below is the image of the same :
+
+![Auto Build and Push](https://github.com/Aswinprabhakaran/project_fulhaus/blob/main/display_images/Github_Action_auto_build_and_push.png)
