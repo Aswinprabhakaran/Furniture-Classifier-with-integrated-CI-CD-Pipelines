@@ -72,14 +72,14 @@ def inference(abs_image_path):
 
 b) For demo purpose, I have Also slightly toughed up on a Front-End in Flask which enables us to upload an image for the prediction/inference purposes.
 
-<img src="https://github.com/Aswinprabhakaran/project_fulhaus/blob/main/display_images/view_1.png" width="200" height="200">
+<img src="https://github.com/Aswinprabhakaran/project_fulhaus/blob/main/display_images/view_1.png" width="400" height="300">
 
-<img src="https://github.com/Aswinprabhakaran/project_fulhaus/blob/main/display_images/view_2.png" width="200" height="200">
+<img src="https://github.com/Aswinprabhakaran/project_fulhaus/blob/main/display_images/view_2.png" width="400" height="300">
 
 
 c) The uploaded images is handled by flask forms and inference is done on the image and the results are routed back to the front end with Confidence percentage as well.
 
-<img src="https://github.com/Aswinprabhakaran/project_fulhaus/blob/main/display_images/view_3.png" width="200" height="200">
+<img src="https://github.com/Aswinprabhakaran/project_fulhaus/blob/main/display_images/view_3.png" width="400" height="300">
 
 
 ## Libraries and Frameworks Used :
