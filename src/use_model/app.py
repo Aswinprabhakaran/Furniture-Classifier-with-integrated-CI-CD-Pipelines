@@ -88,7 +88,7 @@ def upload_file():
 if __name__ == '__main__':
 
     # Loading the keras h5 model trained
-    Model_obj = LoadModel(model_path = "./model/weights-improvement-11-0.97.hdf5") 
+    Model_obj = LoadModel(model_path = "./model/final_trained_model.hdf5") 
     Model_obj.load_model()
 
     with open("./model/class_label_map.pickle", 'rb') as fin:
