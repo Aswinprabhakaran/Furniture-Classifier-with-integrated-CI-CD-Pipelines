@@ -115,3 +115,5 @@ CMD [ "python3", "-m" , "src.use_model.app"]
 
 This config seleccted the Python image and then copies the python virtual environment which we have set-up and the copies all the necessary files to run the flask application.
 Once the files are copied, the python execution command is triggered.
+
+![Docker Image](https://github.com/Aswinprabhakaran/project_fulhaus/blob/main/display_images/docker_image_built.png)
