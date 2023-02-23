@@ -70,6 +70,14 @@ def inference(abs_image_path):
     return predictions
 ```
 
-b) For demo purpose, I have also introduced a Front-End in Flask which enables us to upload an image for the prediction/inference purposes.
+b) For demo purpose, I have Also slightly toughed up on a Front-End in Flask which enables us to upload an image for the prediction/inference purposes.
+
+![Landing Page...](https://github.com/Aswinprabhakaran/project_fulhaus/blob/main/display_images/view_1.png)
+
+![Upload Image to be classified...](https://github.com/Aswinprabhakaran/project_fulhaus/blob/main/display_images/view_2.png)
+
 
 c) The uploaded images is handled by flask forms and inference is done on the image and the results are routed back to the front end with Confidence percentage as well.
+
+![Result Page](https://github.com/Aswinprabhakaran/project_fulhaus/blob/main/display_images/view_3.png)
+
